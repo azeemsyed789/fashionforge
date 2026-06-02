@@ -27,7 +27,7 @@ class GeminiTryOnBackend:
         
         self.client = genai.Client(api_key=api_key)
         # Use Gemini model with image generation capabilities
-        self.model_id = 'gemini-3-pro-image-preview'
+        self.model_id = 'gemini-3-pro-image'
     
     def _image_to_base64(self, image: Image.Image) -> str:
         """Convert PIL Image to base64 string"""
